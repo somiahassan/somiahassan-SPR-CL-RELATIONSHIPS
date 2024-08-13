@@ -15,6 +15,7 @@ public class Application {
     public static void main(String[] args) {
         ApplicationContext applicationContext = SpringApplication.run(Application.class);
 
+        
         // get my beans
         AlbumService albumService = applicationContext.getBean(AlbumService.class);
         ArtistService artistService = applicationContext.getBean(ArtistService.class);
